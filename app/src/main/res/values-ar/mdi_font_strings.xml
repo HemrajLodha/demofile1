@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-
-    <string name="fa_quote_left">&#xf10e;</string>
-    <string name="fa_chevron_right">&#xf053;</string>
-    <string name="fa_settings_gear">&#xf013; الإعدادات</string>
-    <string name="mdi_reset_password_lock">&#xF33E; إعادة  تعيين كلمة المرور</string>
-</resources>

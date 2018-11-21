@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <declare-styleable name="TextViewRichDrawable"><attr format="dimension" name="compoundDrawableWidth"/><attr format="dimension" name="compoundDrawableHeight"/><attr format="reference" name="drawableStartVector"/><attr format="reference" name="drawableTopVector"/><attr format="reference" name="drawableEndVector"/><attr format="reference" name="drawableBottomVector"/><attr format="reference" name="drawableTint"/></declare-styleable>
-</resources>
