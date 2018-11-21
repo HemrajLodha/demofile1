@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/menu_home" />
+    <item
+        android:id="@+id/nav_my_classes"
+        android:title="@string/menu_my_classes" />
+    <item
+        android:id="@+id/nav_my_students"
+        android:title="@string/menu_my_students" />
+    <item
+        android:id="@+id/nav_class_attendance"
+        android:title="@string/menu_attendance" />
+    <item
+        android:id="@+id/nav_assignments"
+        android:title="@string/menu_my_assignments" />
+    <item
+        android:id="@+id/nav_messages"
+        android:title="@string/menu_messages" />
+    <item
+        android:id="@+id/nav_child_marks"
+        android:title="@string/menu_marks" />
+    <item
+        android:id="@+id/nav_my_schedule"
+        android:title="@string/menu_my_schedule" />
+    <item
+        android:id="@+id/nav_class_my_leave"
+        android:title="@string/menu_class_my_leave" />
+    <item
+        android:id="@+id/nav_class_leave"
+        android:title="@string/menu_class_leave" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/menu_my_profile" />
+    <item
+        android:id="@+id/nav_settings"
+        android:title="@string/menu_settings" />
+
+</menu>

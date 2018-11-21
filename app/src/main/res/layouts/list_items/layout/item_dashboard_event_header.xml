@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/size_4"
+    android:background="@drawable/dashboard_card_top_bg"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:textDirection="locale">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/size_8">
+
+        <ImageView
+            android:id="@+id/img_icon"
+            android:layout_width="@dimen/size_24"
+            android:layout_height="@dimen/size_24"
+            android:src="@drawable/dashboard_today_schedule_250" />
+
+        <com.pws.pateast.widget.FTextView
+            android:id="@+id/tv_event_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/form_item_margin_top"
+            android:layout_marginStart="@dimen/form_item_margin_top"
+            android:layout_toEndOf="@+id/img_icon"
+            android:layout_toRightOf="@+id/img_icon"
+            android:fontFamily="@string/font_sans_serif_condensed"
+            android:gravity="center_vertical"
+            android:text="Today's Schedules"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_medium" />
+
+        <com.pws.pateast.widget.MDITextView
+            android:id="@+id/expand_collepse_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@string/font_sans_serif_medium"
+            android:gravity="center_vertical"
+            android:text="@string/mdi_plus"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</LinearLayout>

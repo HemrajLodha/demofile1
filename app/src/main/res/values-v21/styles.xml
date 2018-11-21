@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="TeacherTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryTeacher</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkTeacher</item>
+        <item name="colorAccent">@color/colorAccentTeacher</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerThemeTeacher</item>
+    </style>
+
+    <style name="ParentTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryParent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkParent</item>
+        <item name="colorAccent">@color/colorAccentParent</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerThemeParent</item>
+    </style>
+
+    <style name="DriverTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryDriver</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkDriver</item>
+        <item name="colorAccent">@color/colorAccentDriver</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerThemeDriver</item>
+    </style>
+
+    <style name="StudentTheme" parent="AppTheme">
+        <item name="colorPrimary">@color/colorPrimaryStudent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkStudent</item>
+        <item name="colorAccent">@color/colorAccentStudent</item>
+        <item name="android:datePickerDialogTheme">@style/DatePickerThemeStudent</item>
+    </style>
+</resources>

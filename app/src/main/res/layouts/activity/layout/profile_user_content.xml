@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:textDirection="locale">
+
+    <View
+        style="@style/Divider"
+        android:layout_marginTop="@dimen/form_item_margin_top" />
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/form_item_margin_top">
+
+        <com.pws.pateast.widget.MDITextView
+            android:id="@+id/tv_user_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@string/font_sans_serif_medium"
+            android:text="@string/mdi_account"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size_x_large"
+            app:layout_widthPercent="20%" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_user_icon"
+            android:layout_toRightOf="@+id/tv_user_icon"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/font_sans_serif_medium"
+                android:text="camroon"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_v_medium"
+                app:layout_widthPercent="80%" />
+
+            <TextView
+                android:id="@+id/tv_user_name_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_4"
+                android:text="@string/username"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_small"
+                app:layout_widthPercent="80%" />
+        </LinearLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:layoutDirection="locale"
+    android:textDirection="locale">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/size_5"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/appbar_profile_content" />
+
+            <View
+                style="@style/Divider"
+                android:layout_height="@dimen/size_5" />
+
+            <com.pws.pateast.widget.ProfileDetailView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:fontFace="mdi"
+                app:fontIcon="@string/mdi_account_convert"
+                app:tag="@string/username">
+
+            </com.pws.pateast.widget.ProfileDetailView>
+
+            <View style="@style/Divider" />
+
+            <com.pws.pateast.widget.ProfileDetailView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tag="@string/title_address">
+
+            </com.pws.pateast.widget.ProfileDetailView>
+
+            <View style="@style/Divider" />
+
+            <com.pws.pateast.widget.ProfileDetailView
+                android:id="@+id/licence_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tag="@string/title_licence_number">
+
+            </com.pws.pateast.widget.ProfileDetailView>
+
+            <View style="@style/Divider" />
+
+            <com.pws.pateast.widget.ProfileDetailView
+                android:id="@+id/licence_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tag="@string/title_licence_date">
+
+            </com.pws.pateast.widget.ProfileDetailView>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

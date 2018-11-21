@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/size_4"
+    android:background="@drawable/dashboard_card_bottom_bg"
+    android:layoutDirection="locale"
+    android:paddingBottom="@dimen/form_item_label_padding"
+    android:paddingEnd="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingStart="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/form_item_label_padding"
+    android:textDirection="locale">
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_view_more"
+        style="?attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_28"
+        android:background="@drawable/bottom_round_button_bg"
+        android:fontFamily="@string/font_sans_serif_medium"
+        android:text="@string/title_view_more"
+        android:textColor="@color/student_form_color_red"
+        android:textSize="@dimen/text_size_small" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/size_30"
+        android:layout_height="@dimen/size_30"
+        android:layout_centerHorizontal="true" />
+
+    <com.pws.pateast.widget.FTextView
+        android:id="@+id/no_data_available"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_30"
+        android:fontFamily="@string/font_sans_serif_medium"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_small" />
+
+</android.support.percent.PercentRelativeLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:textDirection="locale"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/layout_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/list_bottom_padding"
+            android:paddingLeft="@dimen/list_left_padding"
+            android:paddingRight="@dimen/list_right_padding"
+            android:paddingTop="@dimen/list_top_padding"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_subject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/font_sans_serif_medium"
+                android:textColor="?attr/colorPrimary"
+                android:textSize="@dimen/text_size_v_medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/size_5"
+                android:orientation="horizontal">
+
+                <com.pws.pateast.widget.FATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/list_top_padding"
+                    android:text="@string/fa_calender"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_v_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_sans_serif_condensed"
+                    android:text="@string/exam_time"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/text_size_v_small" />
+
+                <TextView
+                    android:id="@+id/tv_exam_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_sans_serif_medium"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_x_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.pws.pateast.widget.FATextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="@dimen/list_top_padding"
+                    android:text="@string/fa_wait_half"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_v_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_sans_serif_condensed"
+                    android:text="@string/duration"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/text_size_v_small" />
+
+                <TextView
+                    android:id="@+id/tv_exam_duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_sans_serif_medium"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_x_small" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size_25"
+                android:layout_marginTop="@dimen/size_5"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/shape_chip_deselected"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_condensed"
+                        android:text="@string/total_marks"
+                        android:textColor="@color/textColorHint"
+                        android:textSize="@dimen/text_size_v_small" />
+
+                    <TextView
+                        android:id="@+id/tv_max_marks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_x_small" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/shape_padding"
+                    android:background="@drawable/shape_chip_deselected"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_condensed"
+                        android:text="@string/min_marks"
+                        android:textColor="@color/textColorHint"
+                        android:textSize="@dimen/text_size_v_small" />
+
+                    <TextView
+                        android:id="@+id/tv_min_marks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_x_small" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/list_bottom_padding"
+            android:layout_marginLeft="@dimen/list_left_padding"
+            android:layout_marginRight="@dimen/list_right_padding"
+            android:layout_marginTop="@dimen/list_top_padding">
+
+            <WebView
+                android:id="@+id/web_syllabus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_edit"
+        android:visible="false"
+        android:title="@string/menu_edit" />
+    <item
+        android:id="@+id/menu_publish"
+        android:visible="false"
+        android:title="@string/menu_publish" />
+    <item
+        android:id="@+id/menu_delete"
+        android:visible="false"
+        android:title="@string/menu_delete" />
+    <item
+        android:id="@+id/menu_cancel"
+        android:visible="false"
+        android:title="@string/menu_cancel" />
+    <item
+        android:id="@+id/menu_complete"
+        android:visible="false"
+        android:title="@string/menu_complete" />
+    <item
+        android:id="@+id/menu_review"
+        android:visible="false"
+        android:title="@string/menu_review" />
+</menu>

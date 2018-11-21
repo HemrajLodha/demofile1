@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pws.pateast.widget.RectangleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fees_view"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@color/dashboard_fees_bg"
+    android:layoutDirection="locale"
+    android:paddingHorizontal="@dimen/size_16"
+    android:paddingVertical="@dimen/size_8"
+    android:textDirection="locale"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/message_view"
+    app:ratio="5">
+
+    <com.pws.pateast.widget.RectangleImageView
+        android:id="@+id/icon_fees"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_fees_dashboard"
+        app:ratio="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/icon_fees"
+        android:layout_toRightOf="@id/icon_fees"
+        android:paddingHorizontal="@dimen/size_8">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.pws.pateast.widget.FTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/due_fee"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+            <com.pws.pateast.widget.FTextView
+                android:id="@+id/tv_due_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15 Dec 2017"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_v_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="end|center_vertical"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <com.pws.pateast.widget.FTextView
+                android:id="@+id/tv_due_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 799"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_medium" />
+
+            <com.pws.pateast.widget.FTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_bg_square"
+                android:paddingHorizontal="@dimen/size_8"
+                android:paddingVertical="@dimen/size_4"
+                android:text="@string/pay_now"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_v_small" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.pws.pateast.widget.RectangleRelativeLayout>

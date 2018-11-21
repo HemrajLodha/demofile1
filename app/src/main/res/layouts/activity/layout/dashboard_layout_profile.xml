@@ -1,0 +1,60 @@
+<com.pws.pateast.widget.RectangleRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/profile_view"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryTeacher"
+    android:layoutDirection="locale"
+    android:textDirection="locale"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toStartOf="@+id/assignment_view"
+    app:ratio="1.4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:paddingTop="@dimen/form_item_margin_top">
+
+        <com.pws.pateast.widget.ProfileImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="@dimen/size_60"
+            android:layout_height="@dimen/size_60"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/avatar1"
+            app:civ_border_color="@color/colorPrimaryLightTeacher"
+            app:civ_border_width="@dimen/size_2" />
+
+
+        <com.pws.pateast.widget.FTextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivAvatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/form_item_label_padding_top"
+            android:ellipsize="end"
+            android:fontFamily="@string/font_sans_serif_medium"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/not_available"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/text_size_v_medium" />
+
+        <com.pws.pateast.widget.FTextView
+            android:id="@+id/tvClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:fontFamily="@string/font_sans_serif_light"
+            android:maxLines="1"
+            android:text="@string/not_available"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/text_size_small" />
+    </RelativeLayout>
+
+
+</com.pws.pateast.widget.RectangleRelativeLayout>

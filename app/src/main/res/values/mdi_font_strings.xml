@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tv_options_code" translatable="false">&#8942;</string>
+
+    <!--Version : 1.9.32-->
+    <string name="mdi_calendar" translatable="false">&#xF0ED;</string>
+    <string name="mdi_file" translatable="false">&#xF214;</string>
+    <string name="mdi_send" translatable="false">&#xF48A;</string>
+
+    <string name="mdi_home_map_marker" translatable="false">&#xF5F8;</string>
+    <string name="mdi_school" translatable="false">&#xF474;</string>
+    <string name="mdi_book" translatable="false">&#xF0BA;</string>
+    <string name="mdi_book_multiple" translatable="false">&#xF0BB;</string>
+    <string name="mdi_account" translatable="false">&#xF004;</string>
+    <string name="mdi_information" translatable="false">&#xF2FC;</string>
+    <string name="mdi_account_multiple" translatable="false">&#xF00E;</string>
+    <string name="mdi_account_convert" translatable="false">&#xF00A;</string>
+    <string name="mdi_account_key" translatable="false">&#xF00B;</string>
+    <string name="mdi_account_edit" translatable="false">&#xF6BB;</string>
+    <string name="mdi_lock_reset" translatable="false">&#xF772;</string>
+    <string name="mdi_check" translatable="false">&#xF12C;</string>
+    <string name="mdi_check_all" translatable="false">&#xF12D;</string>
+    <string name="mdi_clock" translatable="false">&#xF150;</string>
+    <string name="mdi_attachment" translatable="false">&#xF066;</string>
+    <string name="mdi_download" translatable="false">&#xF1DA;</string>
+    <string name="mdi_upload" translatable="false">&#xF552;</string>
+    <string name="mdi_checkbox_blank_circle" translatable="false">&#xF12F;</string>
+
+    <string name="mdi_lock" translatable="false">&#xF33E;</string>
+
+    <string name="mdi_plus" translatable="false">&#xF415;</string>
+    <string name="mdi_minus" translatable="false">&#xF374;</string>
+    <string name="mdi_reminder" translatable="false">&#xF150;</string>
+    <string name="mdi_bus_school" translatable="false">&#xF0E7;</string>
+    <string name="mdi_worker" translatable="false">&#xF5B5;</string>
+    <!--Version : 4.7.0-->
+    <string name="fa_gear" translatable="false">&#xf013;</string>
+    <string name="fa_file" translatable="false">&#xf15b;</string>
+    <string name="fa_file_text" translatable="false">&#xf15c;</string>
+    <string name="fa_file_text_0" translatable="false">&#xf0f6;</string>
+    <string name="fa_download" translatable="false">&#xf019;</string>
+    <string name="fa_wait" translatable="false">&#xf251;</string>
+    <string name="fa_wait_half" translatable="false">&#xf252;</string>
+    <string name="fa_circle" translatable="false">&#xf111;</string>
+    <string name="fa_ellipsi" translatable="false">&#xf141;</string>
+    <string name="fa_ellipsis_v" translatable="false">&#xf142;</string>
+    <string name="fa_check" translatable="false">&#xf00c;</string>
+    <string name="fa_close" translatable="false">&#xf00d;</string>
+    <string name="fa_ban" translatable="false">&#xf05e;</string>
+    <string name="fa_calender" translatable="false">&#xf073;</string>
+    <string name="fa_calender_check_o" translatable="false">&#xf274;</string>
+    <string name="fa_clock" translatable="false">&#xf017;</string>
+    <string name="fa_question" translatable="false">&#xf128;</string>
+    <string name="fa_clock_o" translatable="false">&#xf017;</string>
+    <string name="fa_trophy" translatable="false">&#xf091;</string>
+    <string name="fa_envelope" translatable="false">&#xf003;</string>
+    <string name="fa_envelope_o" translatable="false">&#xf0e0;</string>
+    <string name="fa_key" translatable="false">&#xf084;</string>
+    <string name="fa_mobile" translatable="false">&#xf10b;</string>
+    <string name="fa_phone" translatable="false">&#xf095;</string>
+    <string name="fa_male" translatable="false">&#xf183;</string>
+    <string name="fa_female" translatable="false">&#xf182;</string>
+    <string name="fa_previous" translatable="false">&#xf104;</string>
+    <string name="fa_next" translatable="false">&#xf105;</string>
+    <string name="fa_address_card" translatable="false">&#xf2bb;</string>
+    <string name="fa_upload" translatable="false">&#xf093;</string>
+    <string name="fa_book" translatable="false">&#xf02d;</string>
+    <string name="fa_institute" translatable="false">&#xf19c;</string>
+    <string name="fa_edit" translatable="false">&#xf044;</string>
+    <string name="fa_lock" translatable="false">&#xf023;</string>
+    <string name="fa_bell_o" translatable="false">&#xf0a2;</string>
+    <string name="fa_language" translatable="false">&#xf1ab;</string>
+    <string name="fa_power_off" translatable="false">&#xf011;</string>
+    <string name="fa_comments_o" translatable="false">&#xf0e6;</string>
+    <string name="fa_smile_o" translatable="false">&#xf118;</string>
+    <string name="fa_meh_o" translatable="false">&#xf11a;</string>
+    <string name="fa_frown_o" translatable="false">&#xf119;</string>
+    <string name="fa_pencil" translatable="false">&#xf040;</string>
+    <string name="fa_heart_o" translatable="false">&#xf08a;</string>
+    <string name="fa_heart" translatable="false">&#xf004;</string>
+    <string name="fa_trash" translatable="false">&#xf1f8;</string>
+    <string name="fa_image" translatable="false">&#xf03e;</string>
+    <string name="fa_video" translatable="false">&#xf03d;</string>
+
+    <string name="fa_settings_gear">&#xf013; Settings</string>
+    <string name="mdi_reset_password_lock">&#xF33E; Reset Password</string>
+    <string name="fa_chevron_right">&#xf054;</string>
+    <string name="fa_quote_left">&#xf10d;</string>
+</resources>

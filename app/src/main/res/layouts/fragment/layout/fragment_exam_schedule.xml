@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:textDirection="locale">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/layout_filter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_40"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/tv_select_class"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/edittext_background_sqaure"
+                android:drawableEnd="@drawable/ic_arrow_drop_down"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:ellipsize="end"
+                android:fontFamily="@string/font_sans_serif_condensed"
+                android:gravity="center_vertical"
+                android:hint="@string/title_class"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/size_16"
+                android:paddingRight="@dimen/size_16"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColorHint"
+                android:textSize="@dimen/text_size_small" />
+
+            <TextView
+                android:id="@+id/tv_select_exam"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@drawable/edittext_background_sqaure"
+                android:drawableEnd="@drawable/ic_arrow_drop_down"
+                android:drawableRight="@drawable/ic_arrow_drop_down"
+                android:ellipsize="end"
+                android:fontFamily="@string/font_sans_serif_condensed"
+                android:gravity="center_vertical"
+                android:hint="@string/title_exam"
+                android:maxLines="1"
+                android:paddingLeft="@dimen/size_16"
+                android:paddingRight="@dimen/size_16"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColorHint"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <com.base.ui.view.BaseRecyclerView
+        android:id="@+id/rv_exam_schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.base.ui.view.BaseRecyclerView>
+
+</LinearLayout>

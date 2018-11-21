@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/quote_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:padding="@dimen/size_16"
+    android:textDirection="locale">
+
+    <com.pws.pateast.widget.FTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|start"
+        android:text="@string/fa_quote_left"
+        android:textColor="@color/md_grey_300"
+        android:textSize="@dimen/text_size_xx_large"
+        app:fontFace="fa" />
+
+    <com.pws.pateast.widget.FTextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/size_2"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:gravity="center"
+        android:text="@string/ward_selection_quote"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="@dimen/text_size_medium" />
+
+    <com.pws.pateast.widget.FTextView
+        android:id="@+id/author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|end"
+        android:layout_marginTop="@dimen/size_4"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:text="@string/ward_quote_author"
+        android:textColor="?attr/colorAccent"
+        android:textSize="@dimen/text_size_medium" />
+</LinearLayout>

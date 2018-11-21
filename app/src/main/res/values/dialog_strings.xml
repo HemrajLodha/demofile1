@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_session_title">Session</string>
+    <string name="action_language_title">Language</string>
+    <string name="action_change_session_title">Change Session</string>
+    <string name="action_change_language_title">Change Language</string>
+    <string name="action_change_exam_head_title">Change Exam Head</string>
+    <string name="logout_prompt_message">Are you sure you want to Logout?</string>
+    <string name="delete_prompt_message">Are you sure you want to delete?</string>
+    <string name="cancel_prompt_message">Are you sure you want to cancel?</string>
+    <string name="approve_prompt_message">Are you sure you want to approve?</string>
+    <string name="reject_prompt_message">Are you sure you want to reject?</string>
+    <string name="download_prompt_message">Are you sure you want to download?</string>
+    <string name="max_feed_file_count_exceed">Maximum File Upload limit has been reached for this account!</string>
+    <string name="approve_all_prompt_message">Are you sure you want to approve for all?</string>
+    <string name="approve_class_prompt_message">Are you sure you want to approve for class?</string>
+
+    <string name="post_feed_all">Do you want to post feed for all classes?</string>
+    <string name="disapprove_prompt_message">Are you sure you want to disapprove?</string>
+</resources>

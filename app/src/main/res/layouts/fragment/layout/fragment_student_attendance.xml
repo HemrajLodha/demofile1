@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_calendar_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/list_bottom_padding"
+    android:paddingLeft="@dimen/list_left_padding"
+    android:paddingRight="@dimen/list_right_padding"
+    android:paddingTop="@dimen/list_top_padding"
+    android:textDirection="locale"
+    android:visibility="gone">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/list_top_padding"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:text="@string/total_days"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_v_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_total_days"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_v_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:text="@string/total_absent"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_v_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_total_absent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_v_medium" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/list_top_padding">
+
+                <LinearLayout
+                    android:id="@+id/lay1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:text="@string/total_present"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_v_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_total_present"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:maxLines="1"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_v_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lay1"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:text="@string/total_late"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_v_medium" />
+
+                    <TextView
+                        android:id="@+id/tv_total_leave"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_v_medium" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_1"
+        android:layout_marginBottom="@dimen/size_16"
+        android:background="@drawable/divider_recycle_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.pws.pateast.widget.RectangleLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:ratio="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:orientation="horizontal">
+
+                <com.pws.pateast.widget.FATextView
+                    android:id="@+id/btn_previous_month"
+                    android:layout_width="@dimen/size_64"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_alignParentLeft="true"
+                    android:fontFamily="@string/font_sans_serif_medium"
+                    android:gravity="center"
+                    android:text="@string/fa_previous"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_x_large" />
+
+                <TextView
+                    android:id="@+id/tv_current_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@string/font_sans_serif_medium"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <com.pws.pateast.widget.FATextView
+                    android:id="@+id/btn_next_month"
+                    android:layout_width="@dimen/size_64"
+                    android:layout_height="@dimen/size_48"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@string/font_sans_serif_medium"
+                    android:gravity="center"
+                    android:text="@string/fa_next"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_x_large" />
+
+            </RelativeLayout>
+
+            <com.pws.calender.CompactCalendarView
+                android:id="@+id/cv_attendance_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:compactCalendarBackgroundColor="@color/white"
+                app:compactCalendarDisplayOtherMonthDays="true"
+                app:compactCalendarEventIndicatorStyle="small_indicator"
+                app:compactCalendarOtherMonthDaysTextColor="@color/textColorBorder"
+                app:compactCalendarShouldSelectFirstDayOfMonthOnScroll="false"
+                app:compactCalendarTextColor="@color/textColor"
+                app:compactCalendarTextSize="@dimen/text_size_small"
+                app:compactWeekDayBackgroundColor="@color/textColorBorder" />
+
+        </com.pws.pateast.widget.RectangleLinearLayout>
+    </LinearLayout>
+</LinearLayout>

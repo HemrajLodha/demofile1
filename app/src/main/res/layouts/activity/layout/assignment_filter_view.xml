@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/filter_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/background_light"
+    android:layoutDirection="locale"
+    android:textDirection="locale">
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableEnd="@drawable/ic_arrow_drop_down"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/form_item_margin_top"
+        android:paddingLeft="@dimen/form_item_label_padding"
+        android:paddingStart="@dimen/form_item_label_padding"
+        android:paddingTop="@dimen/form_item_margin_top"
+        android:text="@string/hint_filter_by_subject"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_small"
+        app:layout_widthPercent="33.02%" />
+
+    <TextView
+        android:id="@+id/arrow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_toEndOf="@+id/tv_subject"
+        android:layout_toRightOf="@+id/tv_subject"
+        android:background="@color/md_grey_400"
+        android:paddingBottom="@dimen/size_16"
+        android:paddingTop="@dimen/size_16"
+        app:layout_widthPercent="0.2%" />
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="?android:attr/selectableItemBackground"
+        android:drawableEnd="@drawable/ic_arrow_drop_down"
+        android:drawableRight="@drawable/ic_arrow_drop_down"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/form_item_margin_top"
+        android:paddingLeft="@dimen/form_item_label_padding"
+        android:paddingStart="@dimen/form_item_label_padding"
+        android:paddingTop="@dimen/form_item_margin_top"
+        android:text="@string/hint_filter_by_remark"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_small"
+        app:layout_widthPercent="33.02%" />
+
+    <TextView
+        android:id="@+id/arrow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/tv_remark"
+        android:layout_toRightOf="@+id/tv_remark"
+        android:background="@color/md_grey_400"
+        android:paddingBottom="@dimen/size_16"
+        android:paddingTop="@dimen/size_16"
+        app:layout_widthPercent="0.2%" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/size_4"
+        android:layout_toEndOf="@+id/arrow2"
+        android:layout_toRightOf="@+id/arrow2"
+        android:background="@drawable/date_selector_bg_round"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <com.pws.pateast.widget.datepickerview.DatePickerTextView
+            android:id="@+id/tv_due_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:paddingBottom="@dimen/size_4"
+            android:paddingEnd="@dimen/size_4"
+            android:paddingRight="@dimen/size_4"
+            android:paddingTop="@dimen/size_4"
+            android:text="@string/hint_filter_by_due_date"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="@dimen/text_size_small"
+            app:dateFormat="yyyy-MM-dd" />
+
+        <com.pws.pateast.widget.FTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:text="@string/fa_calender"
+            android:textColor="?attr/colorPrimary"
+            app:fontFace="fa" />
+
+    </LinearLayout>
+
+
+</android.support.percent.PercentRelativeLayout>

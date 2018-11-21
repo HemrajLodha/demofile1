@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="no_attendance_report_found">لم يتم العثور على سجل الحضور.</string>
+    <string name="no_students">لم يتم العثور على الطلاب</string>
+    <string name="no_classes">لم يتم العثور على الصفوف الدراسية</string>
+    <string name="no_subject">لم يتم العثور على المواد</string>
+    <string name="no_subject_student">لم يتم العثور على المواد الدراسية ولا الطلاب</string>
+    <string name="no_assignment">لم يتم العثور على الواجب</string>
+    <string name="no_exam_schedule">لم يتم العثور على جدول الاختبار</string>
+    <string name="no_schedule">لم يتم العثور على الجدول</string>
+    <string name="weekly_off">توقف أسبوعي </string>
+    <string name="no_exam_marks">لم يتم العثور على علامات الاختبار</string>
+    <string name="no_pending_leave">لا توجد اجازة معلقة</string>
+    <string name="no_approved_leave">لا توجد اجازة موافق عليها</string>
+    <string name="no_rejected_leave">لا توجد اجازة مرفوضة</string>
+    <string name="no_cancelled_leave">لا توجد اجازة ملغاة</string>
+    <string name="no_leave_applied">لا يوجد طلب اجازة</string>
+    <string name="no_leave_reason">لم يتم العثور على سبب للاجازة</string>
+
+    <string name="access_denied">لا يسمح بالدخول</string>
+
+    <!--not in Arabic-->
+    <string name="no_teachers">لم يتم العثور على المعلمين</string>
+    <string name="no_holiday">لم يتم العثور على العطلة</string>
+    <string name="no_admins">لم يتم العثور على المشرف</string>
+    <string name="no_notification">لم يتم العثور على إشعار</string>
+    <string name="no_parents">لم يتم العثور على أولياء الامور</string>
+    <string name="no_institute">لم يتم العثور على أي معاهد.</string>
+    <string name="no_routes">لم يتم العثور على الطرق</string>
+    <string name="no_trip">لم يتم العثور على الرحلة</string>
+    <string name="no_camera_exists">لا يوجد تطبيق للكاميرا</string>
+    <string name="no_gallery_exists">لا يوجد تطبيق للمعرض</string>
+    <string name="no_app_exists">لايوجد تطبيق</string>
+    <string name="no_tag_found">لم يتم العثور على بطاقة</string>
+    <string name="no_result_found">لم يتم العثور على نتائج</string>
+    <string name="no_complaint_found">لم يتم العثور على أي شكوى</string>
+    <string name="no_payment_found">لم يتم العثور على سجل دفعات</string>
+
+</resources>

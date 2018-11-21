@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="dashboard_icons">
+        <item>@string/menu_home</item>
+        <item>@string/menu_timetable</item>
+        <item>@string/menu_my_assignments</item>
+        <item>@string/menu_events</item>
+        <item>@string/menu_messages</item>
+        <item>@string/menu_exam_marks</item>
+        <item>@string/menu_my_attendance</item>
+        <item>@string/menu_newsletter</item>
+        <item>@string/menu_leave_application</item>
+    </array>
+
+    <string-array name="random_colors">
+        <item>#F66972</item>
+        <item>#80B66A</item>
+        <item>#1BA0E1</item>
+        <item>#E99F18</item>
+        <item>#FD5621</item>
+        <item>#B065B7</item>
+    </string-array>
+
+    <string-array name="week">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+
+
+    <string-array name="month">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="assignment_status">
+        <item>@string/assignment_draft</item>
+        <item>@string/assignment_published</item>
+        <item>@string/assignment_canceled</item>
+        <item>@string/assignment_completed</item>
+        <item>@string/assignment_reviewed</item>
+    </string-array>
+
+    <string-array name="leave_status">
+        <item>@string/leave_pending</item>
+        <item>@string/leave_approved</item>
+        <item>@string/leave_canceled</item>
+    </string-array>
+
+    <string-array name="leave_duration">
+        <item>@string/leave_duration_first_half</item>
+        <item>@string/leave_duration_second_half</item>
+    </string-array>
+
+    <string-array name="leave_type">
+        <item>@string/leave_full_day</item>
+        <item>@string/leave_half_day</item>
+    </string-array>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/size_4"
+    app:cardElevation="@dimen/size_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/size_16"
+        android:paddingVertical="@dimen/size_8">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <com.pws.pateast.widget.FTextView
+                    android:id="@+id/tv_complaint_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_sans_serif_condensed"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_v_medium" />
+
+                <com.pws.pateast.widget.FTextView
+                    android:id="@+id/tv_complaint_by_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_sans_serif_medium"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_size_small" />
+
+            </LinearLayout>
+
+            <com.pws.pateast.widget.FTextView
+                android:id="@+id/tv_payment_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/font_sans_serif_medium"
+                android:text="@string/leave_pending"
+                android:textAllCaps="true"
+                android:textColor="@color/md_red_700"
+                android:textSize="@dimen/text_size_v_small"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.pws.pateast.widget.FTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/font_sans_serif_condensed"
+                android:text="@string/hint_penalty"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_v_medium" />
+
+            <com.pws.pateast.widget.FTextView
+                android:id="@+id/tv_penalty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@string/font_sans_serif_medium"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <com.pws.pateast.widget.FTextView
+            android:id="@+id/tv_complaint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/colorPrimaryParent"
+            android:textSize="@dimen/text_size_v_medium" />
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

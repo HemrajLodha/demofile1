@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:textDirection="locale"
+    app:cardCornerRadius="@dimen/size_6"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.pws.pateast.widget.FTextView
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_centerInParent="true"
+                android:fontFamily="@string/font_sans_serif_light"
+                android:gravity="center"
+                android:text="@string/menu_message"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.pws.pateast.widget.FTextView
+                android:id="@+id/tv_student_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:ellipsize="end"
+                android:fontFamily="@string/font_sans_serif_medium"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/student_form_icon_blue"
+                android:textSize="@dimen/text_size_v_medium" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:descendantFocusability="beforeDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:paddingEnd="@dimen/size_16"
+                android:paddingLeft="@dimen/size_16"
+                android:paddingRight="@dimen/size_16"
+                android:paddingStart="@dimen/size_16">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/TextLabel"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="255"
+                    app:hintEnabled="false">
+
+                    <com.pws.pateast.widget.ActionEditText
+                        android:id="@+id/et_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background_round"
+                        android:gravity="top"
+                        android:hint="@string/hint_enter_message"
+                        android:imeOptions="actionDone"
+                        android:maxLength="255"
+                        android:minLines="6"
+                        android:paddingBottom="@dimen/size_10"
+                        android:paddingLeft="@dimen/et_left_right_padding"
+                        android:paddingRight="@dimen/et_left_right_padding"
+                        android:paddingTop="@dimen/size_10"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/textColorHint"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <TextView
+                        android:id="@+id/tv_error_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_12"
+                        android:textColor="@color/md_red_900" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_send"
+                    style="@style/MaterialButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/list_left_padding"
+                    android:text="@string/submit" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.v7.widget.CardView>

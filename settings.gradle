@@ -1,0 +1,1 @@
+include ':app', ':calender', ':cropper', ':fabrevealmenu', ':ccp', ':floatingactionmenu', ':baseapp', ':compressor'

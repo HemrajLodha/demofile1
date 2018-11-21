@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_action_home"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_action_account"
+            android:title="@string/menu_my_profile" />
+        <item
+            android:id="@+id/nav_school_holidays"
+            android:icon="@drawable/ic_action_calendar_clock"
+            android:title="@string/menu_school_holidays" />
+    </group>
+    <group
+        android:id="@+id/group_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_leaves"
+            android:icon="@drawable/ic_action_calendar_check"
+            android:title="@string/menu_leaves" />
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_action_notifications"
+            android:title="@string/menu_notifications" />
+    </group>
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/ic_action_settings_24"
+        android:title="@string/menu_settings" />
+</menu>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:textDirection="locale"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="@dimen/size_4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/list_bottom_padding"
+        android:background="@drawable/edittext_background_sqaure"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/list_bottom_padding"
+            android:paddingEnd="@dimen/list_right_padding"
+            android:paddingLeft="@dimen/list_left_padding"
+            android:paddingRight="@dimen/list_right_padding"
+            android:paddingStart="@dimen/list_left_padding"
+            android:paddingTop="@dimen/list_top_padding">
+
+            <com.pws.pateast.widget.RectangleLinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                app:ratio="1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/avatar1"
+                    app:civ_border_color="@color/colorAccentParent"
+                    app:civ_border_width="@dimen/size_2" />
+            </com.pws.pateast.widget.RectangleLinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/list_left_padding"
+                android:layout_weight="0.8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.pws.pateast.widget.FTextView
+                        android:id="@+id/tv_ward_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimaryStudent"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingRight="@dimen/list_right_padding">
+
+                        <com.pws.pateast.widget.FTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/list_top_padding"
+                            android:layout_marginRight="@dimen/list_top_padding"
+                            android:text="@string/fa_phone"
+                            android:textColor="?attr/colorAccent"
+                            android:textSize="@dimen/text_size_v_medium"
+                            app:fontFace="fa" />
+
+                        <TextView
+                            android:id="@+id/tv_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@string/font_sans_serif_medium"
+                            android:maxLines="1"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_board"
+                        style="@style/MaterialButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_20"
+                        android:paddingEnd="@dimen/size_4"
+                        android:paddingLeft="@dimen/size_4"
+                        android:paddingRight="@dimen/size_4"
+                        android:paddingStart="@dimen/size_4"
+                        android:text="@string/title_on_board"
+                        android:textSize="@dimen/text_size_v_small" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btn_cancel"
+                        style="@style/MaterialButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/size_20"
+                        android:layout_marginTop="@dimen/size_16"
+                        android:paddingEnd="@dimen/size_4"
+                        android:paddingLeft="@dimen/size_4"
+                        android:paddingRight="@dimen/size_4"
+                        android:paddingStart="@dimen/size_4"
+                        android:text="@string/cancel"
+                        android:textSize="@dimen/text_size_v_small" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_trip_record_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@string/font_sans_serif_condensed"
+            android:paddingBottom="@dimen/list_bottom_padding"
+            android:paddingEnd="@dimen/list_right_padding"
+            android:paddingLeft="@dimen/list_left_padding"
+            android:paddingRight="@dimen/list_right_padding"
+            android:paddingStart="@dimen/list_left_padding"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_small" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

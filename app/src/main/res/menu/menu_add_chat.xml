@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_student"
+        android:icon="@drawable/ic_student"
+        android:title="@string/menu_students" />
+    <item
+        android:id="@+id/menu_teacher"
+        android:icon="@drawable/ic_teacher"
+        android:title="@string/menu_teachers" />
+    <item
+        android:id="@+id/menu_admin"
+        android:icon="@drawable/ic_admin"
+        android:title="@string/menu_admins" />
+    <item
+        android:id="@+id/menu_institute"
+        android:icon="@drawable/ic_institute"
+        android:title="@string/menu_institutes" />
+    <item
+        android:id="@+id/menu_parent"
+        android:icon="@drawable/ic_parent"
+        android:title="@string/menu_parents" />
+</menu>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="menu_home">الصفحة الرئيسية</string>
+    <string name="menu_timetable">جدول الاختبار</string>
+    <string name="menu_my_schedule">الجدول الخاص بي</string>
+    <string name="menu_my_assignments">الواجبات</string>
+    <string name="menu_my_leave">اجازاتي</string>
+    <string name="menu_assignments">الواجبات</string>
+    <string name="menu_polls">استطلاعات الرأي</string>
+    <string name="menu_events">الأحداث</string>
+    <string name="menu_messages">الرسائل</string>
+    <string name="menu_message">رسالة</string>
+    <string name="menu_exam_marks">علامات الاختبار</string>
+    <string name="menu_upload_marks">تحميل العلامات</string>
+    <string name="menu_child_marks">علامات الطفل</string>
+    <string name="menu_child_fee">رسوم الطفل</string>
+    <string name="menu_my_attendance">الحضور</string>
+    <string name="menu_class_attendance">الحضور الصفي</string>
+    <string name="menu_my_students">الطلاب</string>
+    <string name="menu_my_classes">الصفوف الدراسية</string>
+    <string name="menu_holidays">العطلات</string>
+    <string name="menu_newsletter">الجريدة</string>
+    <string name="menu_leave_application">تطبيق الاجازات</string>
+    <string name="menu_leave_request">طلب اجازة</string>
+    <string name="menu_profile">الملف الشخصي</string>
+    <string name="menu_class_my_leave">اجازتي</string>
+    <string name="menu_class_my_leaves">اجازاتي</string>
+    <string name="menu_class_leave">أوراق الطالب</string>
+    <string name="menu_settings">الاعدادات</string>
+    <string name="menu_logout">تسجيل الخروج</string>
+    <string name="menu_galley">المعرض</string>
+    <string name="menu_attendance">الحضور</string>
+    <string name="menu_attendance_for">الحضور للصف</string>
+    <string name="menu_leave">اجازة</string>
+    <string name="menu_attendance_report">سجل الحضور</string>
+    <string name="menu_marks">العلامات</string>
+    <string name="menu_edit">تعديل</string>
+    <string name="menu_delete">حذف</string>
+    <string name="menu_active">نشط</string>
+    <string name="menu_inactive">غير نشط</string>
+    <string name="menu_download_file">تحميل الملف</string>
+    <string name="menu_publish">نشر</string>
+    <string name="menu_cancel">الغاء</string>
+    <string name="menu_approve">موافق</string>
+    <string name="menu_reject">رفض</string>
+    <string name="menu_review">مراجعة</string>
+    <string name="menu_complete">اكتمل</string>
+    <string name="menu_schedule">الجدول</string>
+    <string name="menu_filter">تصفية</string>
+    <string name="menu_calender">عرض التقويم</string>
+    <string name="menu_list">عرض القائمة</string>
+    <string name="menu_filter_advance">التصفية المتقدمة</string>
+    <string name="menu_leave_info">معلومات الاجازة</string>
+    <string name="menu_ptm">اجتماع المعلم مع ولي الأمر</string>
+    <string name="menu_suggestion">اقتراح</string>
+
+    <!--not in arabic-->
+    <string name="menu_dashboard">لوحة التحكم</string>
+    <string name="menu_switch_ward">تغيير الطالب</string>
+    <string name="menu_my_profile">ملفي الشخصي</string>
+    <string name="menu_ward_profile">الطالب الشخصي</string>
+    <string name="menu_track_bus">سير الحافلة</string>
+    <string name="menu_class_schedule">الجدول الصفي</string>
+    <string name="menu_leaves">الاجازات</string>
+    <string name="menu_notifications">اشعار</string>
+    <string name="menu_exam_schedules">جداول الاختبارات</string>
+    <string name="menu_school_holidays">العطلات المدرسية</string>
+    <string name="menu_privacy_policy">سياسة الخصوصية</string>
+    <string name="menu_terms">شروط الخدمة</string>
+    <string name="menu_block">حظر</string>
+    <string name="menu_unblock">رفع الحظر</string>
+
+    <!--not in arabic end-->
+
+    <string name="title_dashboard">لوحة التحكم</string>
+    <string name="title_leave_apply">تقديم الاجازة</string>
+    <string name="title_settings">الاعدادات</string>
+    <string name="title_my_profile">الملف الشخصي</string>
+    <string name="navigation_drawer_open">فتح درج التنقل</string>
+    <string name="navigation_drawer_close">اغلاق درج التنقل</string>
+    <string name="assignment_draft">مسودة</string>
+    <string name="assignment_published">تم النشر</string>
+    <string name="assignment_canceled">تم الالغاء</string>
+    <string name="assignment_completed">مكتمل</string>
+    <string name="assignment_reviewed">تمت المراجعة</string>
+    <string name="leave_pending">معلقة</string>
+    <string name="leave_approved">تمت الموافقة</string>
+    <string name="leave_canceled">تم الالغاء</string>
+    <string name="leave_rejected">تم الرفض</string>
+    <string name="leave_duration_first_half">النصف الاول</string>
+    <string name="leave_duration_second_half">النصف الثاني</string>
+    <string name="leave_half_day">نصف يوم</string>
+    <string name="leave_full_day">يوم كامل</string>
+    <string name="leave_date_duration">%s ايام</string>
+    <string name="leave_half_day_for_day">نصف يوم %s ق يوم</string>
+    <string name="leave_full_day_for_day">يوم كامل %s ق يوم</string>
+    <string name="leave_date_duration_for_days">%1$s لمدة%2$s من الأيام</string>
+
+    <!--//not in arabic-->
+    <string name="menu_students">الطلاب</string>
+    <string name="menu_teachers">المعلمون</string>
+    <string name="menu_admins">المشرفون</string>
+    <string name="menu_institutes">المعاهد</string>
+    <string name="menu_parents">الوالدين</string>
+    <string name="menu_my_student">طلابي</string>
+    <string name="menu_student_leave">اجازة الطالب</string>
+    <string name="menu_qualification">المؤهل</string>
+    <string name="dashboard_menu_my_students">طلابي</string>
+    <string name="dashboard_menu_my_classes">فصولي</string>
+    <string name="dashboard_menu_student_marks">علامات الطالب</string>
+    <string name="menu_ward_leave">اجازات لـ %s</string>
+    <string name="profile_dob">تاريخ الميلاد</string>
+    <string name="profile_doj">تاريخ الالتحاق</string>
+    <string name="profile_subject">مادة</string>
+    <string name="profile_address">العنوان</string>
+    <string name="dialog_menu_daily_report">التقرير اليومي</string>
+    <string name="menu_daily_report"> التقرير اليومي</string>
+    <string name="menu_assignment"> الواجبات</string>
+    <string name="menu_classs_attendance"> الحضور</string>
+    <string name="menu_take_attendance"> أخذ الحضور</string>
+    <string name="button_attendance_report"> سجل الحضور</string>
+    <string name="menu_report"> التقرير</string>
+    <string name="title_report">التقرير</string>
+    <string name="menu_assignment_review"> مراجعة</string>
+    <string name="menu_send_message"> الرسالة</string>
+    <string name="title_suggestions">المقترحات</string>
+    <string name="title_tos">شروط الخدمة</string>
+    <string name="title_privacy">سياسة الخصوصية</string>
+    <string name="logout_message">لقد قمت بتسجيل الدخول على جهاز آخر. سيتم تسجيل خروجك من هذا الجهاز.</string>
+
+    <string name="menu_lms">LMS</string>
+    <string name="menu_payment_history">سجل الدفعات</string>
+    <string name="menu_complaint">شكاوي</string>
+</resources>

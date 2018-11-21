@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="locale"
+    android:orientation="vertical"
+    android:textDirection="locale">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_sans_serif_condensed"
+        android:gravity="center"
+        android:padding="@dimen/size_16"
+        android:text="@string/get_started"
+        android:textColor="@color/colorPrimaryParent"
+        android:textSize="@dimen/text_size_large" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50">
+
+        <com.pws.pateast.widget.FATextView
+            android:layout_width="@dimen/size_50"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_background"
+            android:gravity="center"
+            android:text="@string/fa_mobile"
+            android:textColor="@color/colorLoginBar"
+            android:textSize="@dimen/text_size_x_large" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/sp_country_code"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/edittext_background"
+            android:gravity="center"
+            app:hideNameCode="true"
+            app:showFlag="false" />
+
+        <EditText
+            android:id="@+id/et_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_background"
+            android:digits="0123456789"
+            android:fontFamily="@string/font_sans_serif_condensed"
+            android:hint="@string/user_mobile"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingLeft="@dimen/size_30"
+            android:paddingRight="@dimen/size_30"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColorHint"
+            android:textSize="@dimen/text_size_medium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_otp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_50"
+        android:visibility="invisible">
+
+        <com.pws.pateast.widget.MDITextView
+            android:layout_width="@dimen/size_50"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_background"
+            android:gravity="center"
+            android:text="@string/mdi_lock_reset"
+            android:textColor="@color/colorLoginBar"
+            android:textSize="@dimen/text_size_x_large" />
+
+        <EditText
+            android:id="@+id/et_otp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittext_background"
+            android:digits="0123456789"
+            android:fontFamily="@string/font_sans_serif_condensed"
+            android:hint="@string/otp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:paddingLeft="@dimen/size_30"
+            android:paddingRight="@dimen/size_30"
+            android:singleLine="true"
+            android:textColor="@color/textColor"
+            android:textColorHint="@color/textColorHint"
+            android:textSize="@dimen/text_size_medium" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_verify"
+            style="@style/LoginButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.6"
+            android:text="@string/get_otp" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_resend"
+            style="@style/LoginButtonStyleDark"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:text="@string/resend_otp"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

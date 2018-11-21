@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layoutDirection="locale"
+    android:textDirection="locale">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/layout_content">
+
+        <com.pws.pateast.widget.RectangleImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_splash"
+            app:ratio="5" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layout_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorLoginBG"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+
+        <com.pws.pateast.widget.FontTabLayout
+            android:id="@+id/tab_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabBackground="@drawable/login_tab_bg"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="@color/white">
+
+        </com.pws.pateast.widget.FontTabLayout>
+
+
+        <ViewFlipper
+            android:id="@+id/flip_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/item_login_mobile" />
+
+            <include layout="@layout/item_login_user_name" />
+        </ViewFlipper>
+
+    </LinearLayout>
+</RelativeLayout>

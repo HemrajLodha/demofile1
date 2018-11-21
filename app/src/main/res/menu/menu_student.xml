@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_action_home"
+            android:title="@string/menu_dashboard" />
+        <item
+            android:id="@+id/nav_my_profile"
+            android:icon="@drawable/ic_action_account"
+            android:title="@string/menu_my_profile" />
+        <item
+            android:id="@+id/nav_school_holidays"
+            android:icon="@drawable/ic_action_calendar_clock"
+            android:title="@string/menu_school_holidays" />
+        <item
+            android:id="@+id/nav_school_events"
+            android:icon="@drawable/ic_events"
+            android:title="@string/menu_school_events" />
+        <item
+            android:id="@+id/nav_circular"
+            android:icon="@drawable/ic_circulars"
+            android:title="@string/menu_circular" />
+        <item
+            android:id="@+id/nav_complaint"
+            android:icon="@drawable/ic_action_message"
+            android:title="@string/menu_complaint" />
+    </group>
+    <group
+        android:id="@+id/group_2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_class_schedule"
+            android:icon="@drawable/ic_action_calendar_clock"
+            android:title="@string/menu_class_schedule" />
+        <item
+            android:id="@+id/nav_attendance"
+            android:icon="@drawable/ic_action_calendar_multiple_check"
+            android:title="@string/menu_attendance" />
+        <item
+            android:id="@+id/nav_assignments"
+            android:icon="@drawable/ic_action_file_check"
+            android:title="@string/menu_assignments" />
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_action_message"
+            android:title="@string/menu_messages" />
+        <item
+            android:id="@+id/nav_leaves"
+            android:icon="@drawable/ic_action_calendar_check"
+            android:title="@string/menu_leaves" />
+    </group>
+    <group
+        android:id="@+id/group_3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_notifications"
+            android:icon="@drawable/ic_action_notifications"
+            android:title="@string/menu_notifications" />
+        <item
+            android:id="@+id/nav_lms"
+            android:icon="@drawable/ic_action_file_check"
+            android:title="@string/menu_lms" />
+        <item
+            android:id="@+id/nav_feeds"
+            android:icon="@drawable/ic_action_file_check"
+            android:title="@string/menu_feeds" />
+        <item
+            android:id="@+id/nav_exam_schedules"
+            android:icon="@drawable/ic_action_exam_schedule"
+            android:title="@string/menu_exam_schedules" />
+        <item
+            android:id="@+id/nav_exam_marks"
+            android:icon="@drawable/ic_action_marks"
+            android:title="@string/menu_exam_marks" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_action_settings_24"
+            android:title="@string/menu_settings" />
+    </group>
+</menu>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="locale"
+    android:textDirection="locale"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/size_5"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/list_right_padding"
+            android:layout_marginLeft="@dimen/list_left_padding"
+            android:layout_marginRight="@dimen/list_right_padding"
+            android:layout_marginStart="@dimen/list_left_padding"
+            android:layout_marginTop="@dimen/list_top_padding">
+
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.pws.pateast.widget.RectangleLinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2"
+                    app:ratio="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/user_placeholder"
+                        app:civ_border_color="?attr/colorPrimary"
+                        app:civ_border_overlay="true"
+                        app:civ_border_width="@dimen/size_2" />
+
+                </com.pws.pateast.widget.RectangleLinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/list_left_padding"
+                    android:layout_marginStart="@dimen/list_left_padding"
+                    android:layout_weight="0.8"
+                    android:orientation="vertical">
+
+                    <com.pws.pateast.widget.FTextView
+                        android:id="@+id/tv_student_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/list_bottom_padding"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:textColor="@color/colorPrimaryStudent"
+                        android:textSize="@dimen/text_size_v_medium"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/size_4"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.pws.pateast.widget.FTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/list_top_padding"
+                                android:layout_marginRight="@dimen/list_top_padding"
+                                android:text="@string/fa_phone"
+                                android:textColor="?attr/colorAccent"
+                                android:textSize="@dimen/text_size_v_small"
+                                app:fontFace="fa" />
+
+                            <com.pws.pateast.widget.FTextView
+                                android:id="@+id/tv_phone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@string/font_sans_serif_medium"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size_v_small" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <com.pws.pateast.widget.FTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/list_top_padding"
+                                android:layout_marginRight="@dimen/list_top_padding"
+                                android:fontFamily="@string/font_sans_serif_condensed"
+                                android:text="@string/enrollment_number"
+                                android:textColor="@color/textColorHint"
+                                android:textSize="@dimen/text_size_v_small" />
+
+                            <com.pws.pateast.widget.FTextView
+                                android:id="@+id/tv_enroll_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:fontFamily="@string/font_sans_serif_medium"
+                                android:maxLines="1"
+                                android:textColor="@color/textColor"
+                                android:textSize="@dimen/text_size_v_small" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_content"
+                android:layout_marginTop="@dimen/list_top_padding"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_1"
+                    android:background="@color/md_grey_300" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/list_bottom_padding"
+                    android:layout_marginTop="@dimen/list_top_padding"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/size_20"
+                        android:layout_height="@dimen/size_20"
+                        android:layout_marginEnd="@dimen/list_top_padding"
+                        android:layout_marginRight="@dimen/list_top_padding"
+                        android:gravity="center"
+                        android:padding="@dimen/size_2"
+                        android:src="@drawable/ic_badge_256"
+                        android:tint="@color/student_form_color_red" />
+
+                    <com.pws.pateast.widget.FTextView
+                        android:id="@+id/tv_review_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_v_small" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_options"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/size_28"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="@dimen/size_6"
+            android:layout_marginEnd="@dimen/size_6"
+            android:layout_marginLeft="@dimen/size_6"
+            android:layout_marginRight="@dimen/size_6"
+            android:layout_marginStart="@dimen/size_6"
+            android:background="@drawable/bottom_round_button_bg"
+            android:orientation="horizontal">
+
+            <com.pws.pateast.widget.FTextView
+                android:id="@+id/tv_review"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@string/font_sans_serif_medium"
+                android:gravity="center"
+                android:text="@string/menu_assignment_review"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/text_size_v_small"
+                app:fontFace="fa" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

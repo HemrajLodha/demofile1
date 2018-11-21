@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layoutDirection="locale"
+    android:textDirection="locale">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.pws.pateast.widget.RectangleRelativeLayout
+            android:id="@+id/layout_ward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:ratio="3">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/banner_img" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.pws.pateast.widget.RectangleLinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/list_left_padding"
+                    app:ratio="1">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_ward_profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:civ_border_color="@color/colorPrimaryParent"
+                        app:civ_border_width="@dimen/size_3" />
+
+                </com.pws.pateast.widget.RectangleLinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_ward_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@string/font_sans_serif_medium"
+                            android:maxLines="1"
+                            android:text="@string/classes"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_small" />
+
+                        <TextView
+                            android:id="@+id/tv_ward_class"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:fontFamily="@string/font_sans_serif_medium"
+                            android:maxLines="1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_small" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_ward_institute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:fontFamily="@string/font_sans_serif_medium"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_small" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </com.pws.pateast.widget.RectangleRelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/list_left_padding">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50"
+                android:layout_marginBottom="@dimen/size_8"
+                android:background="@drawable/edittext_background_sqaure">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="match_parent"
+                    android:background="@color/textColorBG"
+                    android:gravity="center"
+                    android:padding="@dimen/size_6"
+                    android:src="@drawable/dashboard_classes"
+                    android:tint="@color/textColorHint"
+                    android:tintMode="multiply" />
+
+                <com.pws.pateast.widget.FTextView
+                    android:id="@+id/tv_select_classes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down"
+                    android:drawableRight="@drawable/ic_arrow_drop_down"
+                    android:fontFamily="@string/font_sans_serif_condensed"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_select_classes"
+                    android:paddingEnd="@dimen/size_16"
+                    android:paddingLeft="@dimen/size_16"
+                    android:paddingRight="@dimen/size_16"
+                    android:paddingStart="@dimen/size_16"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50"
+                android:layout_marginBottom="@dimen/size_8"
+                android:background="@drawable/edittext_background_sqaure">
+
+                <com.pws.pateast.widget.FTextView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="match_parent"
+                    android:background="@color/textColorBG"
+                    android:gravity="center"
+                    android:text="@string/fa_file_text_0"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/text_size_large"
+                    app:fontFace="fa" />
+
+                <TextView
+                    android:id="@+id/tv_select_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:drawableEnd="@drawable/ic_arrow_drop_down"
+                    android:drawableRight="@drawable/ic_arrow_drop_down"
+                    android:fontFamily="@string/font_sans_serif_condensed"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_select_subject"
+                    android:paddingEnd="@dimen/size_16"
+                    android:paddingLeft="@dimen/size_16"
+                    android:paddingRight="@dimen/size_16"
+                    android:paddingStart="@dimen/size_16"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50"
+                android:layout_marginBottom="@dimen/size_8"
+                android:background="@drawable/edittext_background_sqaure">
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="match_parent"
+                    android:background="@color/textColorBG"
+                    android:gravity="center"
+                    android:padding="@dimen/size_10"
+                    android:src="@drawable/ic_assignment_title" />
+
+                <EditText
+                    android:id="@+id/et_assignment_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@string/font_sans_serif_condensed"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_assignment_title"
+                    android:maxLength="50"
+                    android:paddingEnd="@dimen/size_16"
+                    android:paddingLeft="@dimen/size_16"
+                    android:paddingRight="@dimen/size_16"
+                    android:paddingStart="@dimen/size_16"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/text_size_medium" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50"
+                android:layout_marginBottom="@dimen/size_8"
+                android:background="@drawable/edittext_background_sqaure">
+
+                <com.pws.pateast.widget.FTextView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="match_parent"
+                    android:background="@color/textColorBG"
+                    android:gravity="center"
+                    android:text="@string/fa_calender"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/text_size_large"
+                    app:fontFace="fa" />
+
+                <com.pws.pateast.widget.datepickerview.DatePickerEditText
+                    android:id="@+id/et_start_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@string/font_sans_serif_condensed"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_start_date"
+                    android:paddingEnd="@dimen/size_16"
+                    android:paddingLeft="@dimen/size_16"
+                    android:paddingRight="@dimen/size_16"
+                    android:paddingStart="@dimen/size_16"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/text_size_medium"
+                    app:dateFormat="yyyy-MM-dd" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50"
+                android:layout_marginBottom="@dimen/size_8"
+                android:background="@drawable/edittext_background_sqaure">
+
+                <com.pws.pateast.widget.FTextView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="match_parent"
+                    android:background="@color/textColorBG"
+                    android:gravity="center"
+                    android:text="@string/fa_calender"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/text_size_large"
+                    app:fontFace="fa" />
+
+                <com.pws.pateast.widget.datepickerview.DatePickerEditText
+                    android:id="@+id/et_end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@string/font_sans_serif_condensed"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_end_date"
+                    android:paddingEnd="@dimen/size_16"
+                    android:paddingLeft="@dimen/size_16"
+                    android:paddingRight="@dimen/size_16"
+                    android:paddingStart="@dimen/size_16"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/text_size_medium"
+                    app:dateFormat="yyyy-MM-dd" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/view_upload_assignment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_50"
+                android:layout_marginBottom="@dimen/size_16"
+                android:background="@drawable/edittext_background_sqaure">
+
+                <com.pws.pateast.widget.FTextView
+                    android:layout_width="@dimen/size_50"
+                    android:layout_height="match_parent"
+                    android:background="@color/textColorBG"
+                    android:gravity="center"
+                    android:text="@string/fa_upload"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/text_size_large"
+                    app:fontFace="fa" />
+
+                <TextView
+                    android:id="@+id/tv_select_file"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:fontFamily="@string/font_sans_serif_condensed"
+                    android:gravity="center_vertical"
+                    android:hint="@string/hint_assignment_upload"
+                    android:paddingEnd="@dimen/size_16"
+                    android:paddingLeft="@dimen/size_16"
+                    android:paddingRight="@dimen/size_16"
+                    android:paddingStart="@dimen/size_16"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/textColorHint"
+                    android:textSize="@dimen/text_size_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_other_reason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.pws.pateast.widget.FTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/hint_assignment_comment"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/text_size_medium" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_8" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="255"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/et_comment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_background_sqaure"
+                        android:fontFamily="@string/font_sans_serif_condensed"
+                        android:gravity="top"
+                        android:lines="5"
+                        android:maxLength="255"
+                        android:maxLines="5"
+                        android:padding="@dimen/size_4"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_size_medium" />
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_16" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_submit"
+                style="@style/MaterialButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/submit" />
+
+            <com.pws.pateast.widget.AuthorView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:message="@string/apply_leave_message"
+                app:messageColor="@color/colorPrimaryTeacher">
+
+            </com.pws.pateast.widget.AuthorView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

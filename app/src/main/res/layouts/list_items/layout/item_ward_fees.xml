@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_charge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@drawable/divider_recycle_view"
+    android:orientation="vertical">
+
+    <TableRow
+        android:id="@+id/row_charge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.pws.pateast.widget.FTextView
+            android:id="@+id/tv_charge_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@string/font_sans_serif_condensed"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_v_medium" />
+
+        <com.pws.pateast.widget.FTextView
+            android:id="@+id/tv_charge_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@string/font_sans_serif_medium"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_v_medium" />
+
+    </TableRow>
+
+</LinearLayout>
